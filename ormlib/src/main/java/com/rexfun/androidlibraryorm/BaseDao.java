@@ -115,7 +115,7 @@ public abstract class BaseDao<T, PK extends Serializable>
 	/**
 	 * 删除记录(批量)
 	 * @param table 表名
-	 * @param pks List<?>主键值集合
+	 * @param pks List主键值集合
 	 */
 	public void deleteBatch(String table, List<PK> pks)
 	{

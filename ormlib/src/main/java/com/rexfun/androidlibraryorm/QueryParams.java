@@ -31,7 +31,7 @@ public class QueryParams
 	}
 	
 	/**
-	 * 
+	 *
 	 * @param and_or 运算符“and”或“or”
 	 * @param key 参数名
 	 * @param equation 等式符号“=”或“like”
@@ -43,7 +43,6 @@ public class QueryParams
 	
 	/**
 	 * 
-	 * @param args 参数值
 	 */
 	public void addSelectionArgs(String value)
 	{

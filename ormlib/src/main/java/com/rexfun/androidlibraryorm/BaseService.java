@@ -1,10 +1,11 @@
 package com.rexfun.androidlibraryorm;
 
+import android.content.ContentValues;
+import android.database.Cursor;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-import android.content.ContentValues;
-import android.database.Cursor;
 
 public abstract class BaseService<T, PK extends Serializable>
 {
@@ -354,9 +355,8 @@ public abstract class BaseService<T, PK extends Serializable>
 		return getEntityDao().queryPage(o, m, groupBy, having, orderBy, offset, maxResult);
 	}
 	/**
-	 * 获取记录数
-	 * @param sql sql count语句
-	 * @param values where条件参数数组，数组长度需跟where条件的?号个数对应（如：new String[]{"001","张三"}）
+	 * 获取总记录数
+	 * @param table
 	 * @return
 	 */
 	public int getCount(String table)
